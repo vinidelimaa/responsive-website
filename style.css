@@ -1,0 +1,144 @@
+
+
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&display=swap');
+
+
+/* ROOT */
+:root {
+    font-size: 62.5%;  /* 10px */
+
+    --ep: 'Epilogue', sans-serif;
+
+    --01: #ECE9FD;
+    --02: #120848;
+    --03: #7158EF;
+    --04: rgba(10, 0, 57, 0.64);
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: var(--01);
+    font-family: var(--ep);
+
+    font-weight: 400;
+    line-height: 3.2rem;
+    font-size: 1.6rem;
+    padding: 6rem 2.3rem 6.5rem;
+
+}
+
+
+main {
+    /* min-height: 87rem; */
+    max-width: 37.5rem;  /*attention*/
+    margin: 0 auto;
+}
+
+main p:first-child {
+    color: var(--03);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+h1 {
+    color: var(--02);
+    font-weight: 800; 
+    font-size: 4rem;
+    line-height: 5rem;
+    margin: 1.7rem 0 1.5rem;
+}
+
+
+h1 + p {
+    color: var(--04);
+    margin-bottom: 3.2rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--02);
+}
+
+
+a:hover {
+    color: #23137c;
+    font-weight: 700;
+}
+
+
+ul {
+    margin-top: 7.7rem;
+}
+
+
+ul li {
+    list-style: none;
+
+    color: var(--02);
+    font-weight: 700;
+    font-size: 2.4rem;
+    max-width: 2.57rem;
+
+    display: flex;
+    gap: 2.6rem;
+}
+
+
+ul li + li {
+    margin-top: 3.2rem;
+}
+
+
+ul li span {
+    color: var(--02);
+    font-weight: 800;
+    font-size: 7.2rem;
+    line-height: 8rem;
+    letter-spacing: -2px;
+}
+
+
+ul li span:first-child {
+    min-width: 4.6rem;
+    text-align: center;
+}
+
+
+@media (min-width: 700px) {
+
+
+    body {
+        padding: 8rem;
+    }
+
+
+    main {
+        max-width: 1020px;
+        display: flex;
+        gap: 10rem;
+    }
+
+
+    .sec-1 {
+        max-width: 485px;
+    }
+
+
+    ul li {
+        gap: 5.3rem;
+        max-width: 450px;
+        align-items: center;
+      }
+}
